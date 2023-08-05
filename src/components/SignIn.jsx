@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Z = () => {
     const [emailOrMobile, setEmailOrMobile] = useState("");
@@ -144,7 +144,7 @@ const Z = () => {
                         </div>
                         <div className="bottom-account-div">
                             <p>
-                                Don't have an account? <a href="signup.html">Create Account</a>
+                                Don't have an account? <Link to="/signup">Create Account</Link>
                             </p>
                         </div>
                     </div>
