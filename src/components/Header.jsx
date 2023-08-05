@@ -27,8 +27,18 @@ const TopHead = () => {
                             </li>
                         </ul>
                     </div>
+
                     <div className="head_log_area ml-auto">
                         <ul>
+                            <li>
+                                <p><Link to="/profileedit"> {
+                                    userDetails ? (
+                                        "Click Here To edit profile"
+                                    ) : (
+                                        " "
+                                    )
+                                }</Link></p>
+                            </li>
                             <li>
                                 <a href="#">
                                     <img src="images/icon03.png" alt="" />
